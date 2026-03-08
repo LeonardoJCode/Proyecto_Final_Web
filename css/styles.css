@@ -110,9 +110,168 @@ header {
 /* FIN DE RWD, RESPONSIVE WEB DESIGN */
 /* FIN DE MENU */
 
-/* INICIO DE BANNER */
+/* INICIO SOBRE NOSOTROS */
+.banner-animado-unfv {
+  padding: 1em;
+  background-image: url(../img/slider_unfv_anime.png);
+  background-size: cover;
+  background-position: center -90px; /* recorta la parte de arriba */
+  height: 235px;
+  margin-top: 72px;
+  margin-bottom: 16px;
+}
 
-/* FIN DE BANNER */
+.sobre_nosotros {
+  background-image: url(../img/fondo.png);
+  margin-bottom: 36px;
+}
+
+.presentacion h2,
+.mision_vision h2,
+.objetivos h2 {
+  font-family: "Momo Trust Display";
+  font-size: 2em;
+  color: var(--colorTitulos);
+  margin-bottom: 36px;
+}
+
+.presentacion h2,
+.objetivos h2 {
+  text-align: center;
+}
+
+.presentacion p,
+.mision_vision p,
+.objetivos p {
+  font-family: "Urbanist";
+  font-weight: 500;
+  text-align: justify;
+  margin-bottom: 36px;
+}
+
+.mision_vision h2 {
+  padding-top: 0.7em;
+}
+
+.sobre_nosotros hr,
+.objetivos hr {
+  width: 50em;
+  height: 2px;
+  background-color: var(--colorunfv);
+  margin: 25px auto;
+}
+
+.img-villa {
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 2px;
+  box-shadow: 5px 5px 0px 0px #f79f70;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.img-villa:hover {
+  transform: scale(1.05);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+.mision_vision {
+  margin-top: 20px;
+  padding: 0px 150px;
+}
+
+/* TABLET */
+@media (max-width: 1023px) {
+  .mision_vision {
+    padding: 60px;
+  }
+}
+
+/* CELULAR */
+@media (max-width: 767px) {
+  .mision_vision {
+    padding: 30px 20px;
+  }
+}
+
+.mision_vision img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover; /* evita que se deforme */
+  display: block; /* necesario para centrar */
+  margin: 0.5em auto; /* centra horizontalmente */
+  border-radius: 50%;
+  border: 5px dashed var(--colorNaranja);
+  padding: 5px;
+  transition: all ease-in-out 0.5s;
+}
+
+.mision_vision img:hover {
+  transform: rotate(15deg);
+}
+
+.objetivos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2em;
+  padding: 1em;
+  background-color: #f79f70;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+
+  counter-reset: objetivo;
+}
+
+.objetivo {
+  border-radius: 1em;
+  background-color: var(--colorBlanco);
+  box-shadow: 0 0 2px var(--colorSombras);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 200px;
+
+  position: relative;
+  counter-increment: objetivo;
+}
+
+.objetivos p {
+  padding: 1em;
+  text-align: center;
+}
+
+/* circulito con número */
+.objetivo::before {
+  content: counter(objetivo);
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid var(--colorunfv);
+  background-color: #fff;
+  color: var(--colorunfv);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-inicio {
+  padding: 1em;
+  background-image: url(../img/fondo_pag_1.jpg);
+  background-size: cover;
+  height: 400px;
+  margin-top: 20px;
+}
+
+/* FIN SOBRE NOSOTROS */
 
 /* INICIO DE PÁGINA DE BENEFICIOS */
 .beneficios-intro h1 {
