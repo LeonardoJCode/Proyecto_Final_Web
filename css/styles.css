@@ -1,0 +1,441 @@
+/* SELECTOR PADRE */
+:root {
+    --colorNaranja: #D26024;
+    --colorAzul: #131420;
+    --colorSombras: #282D31;
+    --colorTextos: #252525;
+    --colorBordes: #DFE0E0;
+    --colorBlanco: #FFFFFF;
+    --colorGris: #E5E5E5;
+
+    --colorunfv: #F07613;
+}
+
+/* SELECTOR UNIVERSAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* INICIO DE MENU */
+header {
+  background: var(--colorunfv);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0px 1px 5px var(--colorSombras);
+  padding: 0.25em;
+}
+
+.menu {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Nunito";
+}
+
+.img-logo {
+  height: 3em;
+  border-radius: 0.2em;
+  box-shadow: 0px 0px 6px var(--colorSombras);
+}
+
+.btn-menu {
+  display: none;
+}
+
+.enlaces {
+  display: flex;
+  gap: 1em;
+}
+
+.enlaces a {
+  color: var(--colorNegro);
+  text-decoration: none;
+  font-size: 0.8em;
+  padding: 0.7em;
+  font-weight: 700;
+  display: inline-block;
+  transition: all 0.3s ease;
+  border-right: 2px solid var(--colorNegro);
+}
+
+.enlaces a:hover {
+  color: #dfc638;
+  transform: translateY(-3px);
+}
+
+/* INICIO DE RWD , RESPONSIVE WEB DESIGN */
+@media screen and (max-width: 1023px) {
+  .menu {
+    flex-direction: column;
+  }
+
+  .btn-menu {
+    display: block;
+  }
+
+  .icono-menu {
+    color: var(--colorPrimario);
+    font-size: 2em;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 0.4em;
+  }
+
+  .enlaces {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.8em;
+    margin-top: 0.5em;
+  }
+}
+/* FIN DE RWD, RESPONSIVE WEB DESIGN */
+/* FIN DE MENU */
+
+/* INICIO DE BANNER */
+
+
+/* FIN DE BANNER */
+
+.titulo{
+  font-family: "Urbanist";
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+/* INICIO DE PÁGINA DE BENEFICIOS */
+.beneficios-intro h1 {
+    padding: 1em;
+    background-image: url(../img/banner-bn-1.jpg);
+    background-size: cover;
+    font-family: 'Momo Trust Display';
+    font-size: 3em;
+    text-align: center;
+    color: var(--colorBlanco);
+    text-transform: uppercase;
+    margin-top: 72px;
+    margin-bottom: 36px;
+}
+.beneficios-intro p {
+    font-family: 'Urbanist';
+    font-weight: 500;
+    text-align: justify;
+    margin-bottom: 36px;
+}
+
+.beneficios {
+    background-image: url(../img/fondo.png);
+    margin-bottom: 36px;
+}
+.beneficios h2, .egresados h2, .videos h2 {
+    font-family: 'Momo Trust Display';
+    font-size: 2em;
+    color: var(--colorTitulos);
+    margin-bottom: 36px;
+}
+.beneficio img {
+    border-radius: 50%;
+    border: 5px dashed var(--colorNaranja);
+    padding: 10px;
+    transition: all ease-in-out .5s;
+    margin-top: 36px;
+}
+.beneficio img:hover {
+    transform: rotate(15deg);
+}
+.beneficio h3 {
+    font-family: 'Urbanist';
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--colorTitulos);
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 36px;
+}
+
+.estadisticas {
+    padding: 2em;
+    background-image: url(../img/patron.png);
+    background-size: cover;
+    text-align: center;
+    margin-bottom: 36px;
+}
+.estadisticas .icono {
+    font-size: 4em;
+    padding: .5em;
+    color: var(--colorNaranja);
+}
+.estadisticas h3 {
+    font-family: 'Urbanist';
+    font-size: 1.5em;
+    letter-spacing: .5px;
+    color: var(--colorBlanco);
+}
+
+.egresados {
+    background-image: url(../img/fondo.png);
+    margin-bottom: 36px;
+}
+.egresados-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2em;
+}
+.egresado {
+    border-radius: 1em;
+    background-color: var(--colorBlanco);
+    box-shadow: 0 0 2px var(--colorSombras);
+}
+.egresado img {
+    border-radius: 1em 1em 0 0;
+    border-left: 10px solid var(--colorNaranja);
+}
+.egresado-contenido {
+    padding: 1em;
+}
+.egresado-contenido .texto {
+    font-family: 'Urbanist';
+    font-weight: 500;
+    text-align: justify;
+}
+.egresado-contenido .autor {
+    font-family: 'Urbanist';
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 0;
+}
+.egresado-contenido .carrera {
+    font-family: 'Urbanist';
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.videos {
+    background-color: var(--colorGris);
+    margin-bottom: 36px;
+}
+.video iframe {
+    width: 100%;
+    height: 350px;
+}
+/* FIN DE PÁGINA DE BENEFICIOS */
+
+/* INICIO DE PÁGINA DE ADMISIÓN */
+.admision-intro h1 {
+    background-image: url(../img/banner-ad-1.jpg);
+    background-size: cover;
+    padding: 1em;
+    font-family: 'Momo Trust Display';
+    font-size: 3em;
+    text-align: center;
+    color: var(--colorBlanco);
+    text-transform: uppercase;
+    margin-top: 72px;
+    margin-bottom: 36px;
+}
+.admision-intro p {
+    font-family: 'Urbanist';
+    font-weight: 500;
+    text-align: justify;
+    margin-bottom: 36px;
+}
+
+.inscripcion {
+    background-image: url(../img/fondo.png);
+    margin-bottom: 36px;
+}
+.inscripcion h2, .preguntas h2 {
+    font-family: 'Momo Trust Display';
+    font-size: 2em;
+    color: var(--colorTitulos);
+    margin-bottom: 36px;
+}
+.inscripcion-paso p {
+    font-family: 'Urbanist';
+    font-weight: 500;
+    text-align: justify;
+}
+.inscripcion-paso a, .pregunta a {
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--colorNaranja);
+}
+.inscripcion-img {
+    text-align: center;
+    filter: drop-shadow(0 0 2px var(--colorSombras));
+}
+
+.admision-banner {
+    margin-bottom: 36px;
+}
+
+
+.preguntas {
+    margin-bottom: 36px;
+}
+.pregunta {
+    padding: 1.5em;
+    border-radius: 1em;
+    background-color: var(--colorGris);
+    box-shadow: 0 0 2px var(--colorSombras);
+    border-left: 10px solid var(--colorNaranja);
+    margin-bottom: 36px;
+}
+.pregunta p {
+    font-family: 'Urbanist';
+    font-weight: 500;
+    margin-bottom: 0;
+    color: var(--colorTextos);
+}
+
+.publicidad {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    background-image: url(../img/patron.png);
+    background-size: cover;
+    padding: 2.5em;
+    position: relative;
+    margin-bottom: 36px;
+}
+.publicidad-img img {
+    position: absolute;
+    bottom: -60px;
+    filter: drop-shadow(0 0 2px var(--colorSombras));
+}
+.publicidad-contenido p {
+    color: #FFF;
+    font-family: 'Urbanist';
+    font-weight: 800;
+    font-size: 3em;
+    margin-bottom: -10px;
+}
+.publicidad-contenido a {
+    display: inline-block;
+    background-color: var(--colorNaranja);
+    padding: .5em 1em;
+    color: #FFF;
+    font-family: 'Urbanist';
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 2em;
+}
+@media screen and (max-width: 1024px) {
+    .publicidad {
+        grid-template-columns: 1fr;
+    }
+    .publicidad-img img {
+        display: none;
+    }
+}
+/* FIN DE PÁGINA DE ADMISIÓN */
+
+/* INICIO DE FORMULARIO DE CONTACTO */
+.contacto-intro h1 {
+    background-image: url(../img/banner-carreras.jpg);
+    background-size: cover;
+    padding: 1em;
+    font-family: 'Momo Trust Display';
+    font-size: 3em;
+    text-align: center;
+    color: var(--colorBlanco);
+    text-transform: uppercase;
+    margin-top: 72px;
+    margin-bottom: 36px;
+}
+.contacto-intro p {
+    font-family: 'Urbanist';
+    font-weight: 500;
+    text-align: justify;
+    margin-bottom: 36px;
+}
+
+.contacto-form-contenedor {
+    background-image: url(../img/fondo.png);
+    margin-bottom: 36px;
+    padding: 2em;
+}
+.contacto-form {
+    box-shadow: 0 0px 4px var(--colorSombras);
+    border-radius: .5em;
+    background-color: var(--colorBlanco);
+    padding: 2em;
+    max-width: 400px;
+    font-size: .9em;
+    margin: auto;
+}
+.contacto-lista select, .contacto-caja input,
+.contacto-caja textarea {
+    border: 1px solid var(--colorBordes);
+    border-radius: .5em;
+    padding: .6em .8em;
+    margin: .5em 0;
+    outline: none;
+    width: 100%;
+    font-family: 'Urbanist';
+    color: var(--colorTextos);
+    font-weight: 500;
+}
+.contacto-lista option,
+.contacto-caja input::placeholder,
+.contacto-caja textarea::placeholder {
+    color: var(--colorTextos);
+    font-weight: 500;
+}
+.contacto-caja textarea {
+    min-height: 150px;
+    max-height: 200px; 
+}
+.contacto-btn-envio input {
+    width: 100%;
+    background-color: var(--colorNaranja);
+    color: #FFF;
+    font-family: 'Urbanist';
+    border: none;
+    border-radius: .5em;
+    font-weight: 600;
+    padding: .7em 0;
+    transition: background-color 1s ease-in-out;
+}
+.contacto-btn-envio input:hover {
+    background-color: var(--colorAzul);
+}
+
+.contacto-mapa {
+    margin-bottom: 36px;
+}
+.contacto-mapa iframe {
+    width: 100%;
+    height: 300px;
+}
+/* FIN DE FORMULARIO DE CONTACTO */
+
+/* INICIO DE BOTÓN DE IR ARRIBA */
+.ir-arriba {
+    position: fixed;
+    font-size: 20px;
+    padding: 15px;
+    background-color: var(--colorNaranja);
+    color: var(--colorBlanco);
+    border-radius: 50%;
+    right: 20px;
+    bottom: 20px;
+    z-index: 100;
+}
+.ir-arriba:hover {
+    background-color: var(--colorAzul);
+}
+/* FIN DE BOTÓN DE IR ARRIBA */
