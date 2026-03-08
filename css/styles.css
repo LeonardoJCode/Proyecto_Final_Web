@@ -273,6 +273,23 @@ header {
 
 /* FIN SOBRE NOSOTROS */
 
+
+/* INICIO FACULTADES Y CARRERAS */
+.facultades_y_carreras-intro h1 {
+  padding: 1em;
+  background-image: url(../img/cp-banner.jpg);
+  background-size: cover;
+  font-family: "Momo Trust Display";
+  font-size: 3em;
+  text-align: center;
+  color: var(--colorBlanco);
+  text-transform: uppercase;
+  margin-top: 72px;
+  margin-bottom: 36px;
+}
+
+/* FIN FACULTADES Y CARRERAS */
+
 /* INICIO DE PÁGINA DE BENEFICIOS */
 .beneficios-intro h1 {
   padding: 1em;
