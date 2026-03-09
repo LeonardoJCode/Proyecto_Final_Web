@@ -291,48 +291,51 @@ header {
 /* FIN FACULTADES Y CARRERAS */
 
 /* INICIO DE PÁGINA DE BENEFICIOS */
-.beneficios-intro h1 {
+.bnf-banner h1 {
   padding: 1em;
-  background-image: url(../img/banner-bn-1.jpg);
+  background-image: url(../img/bnf-banner.jpg);
   background-size: cover;
   font-family: "Momo Trust Display";
   font-size: 3em;
   text-align: center;
   color: var(--colorBlanco);
   text-transform: uppercase;
-  margin-top: 72px;
-  margin-bottom: 36px;
+  margin-top: 56px;
 }
-.beneficios-intro p {
+
+.bnf-intro {
+    padding: 36px 0;
+}
+.bnf-intro p {
   font-family: "Urbanist";
   font-weight: 500;
   text-align: justify;
-  margin-bottom: 36px;
+  margin-bottom: 0;
 }
 
-.beneficios {
+.bnf-beneficios {
   background-image: url(../img/fondo.png);
-  margin-bottom: 36px;
+  padding: 36px 0;
 }
-.beneficios h2,
-.egresados h2,
-.videos h2 {
+.bnf-beneficios h2,
+.bnf-egresados h2,
+.bnf-videos h2 {
   font-family: "Momo Trust Display";
   font-size: 2em;
   color: var(--colorTitulos);
   margin-bottom: 36px;
 }
-.beneficio img {
+.bnf-beneficio img {
   border-radius: 50%;
   border: 5px dashed var(--colorNaranja);
   padding: 10px;
   transition: all ease-in-out 0.5s;
   margin-top: 36px;
 }
-.beneficio img:hover {
+.bnf-beneficio img:hover {
   transform: rotate(15deg);
 }
-.beneficio h3 {
+.bnf-beneficio h3 {
   font-family: "Urbanist";
   font-size: 1.5em;
   font-weight: 700;
@@ -342,77 +345,79 @@ header {
   margin-top: 36px;
 }
 
-.estadisticas {
-  padding: 2em;
+.bnf-estadisticas {
   background-image: url(../img/patron.png);
   background-size: cover;
-  text-align: center;
-  margin-bottom: 36px;
+  padding: 36px 0;
 }
-.estadisticas .icono {
+.bnf-estadistica {
+  text-align: center;
+}
+.bnf-estadistica .icono {
   font-size: 4em;
   padding: 0.5em;
+  text-align: center;
   color: var(--colorNaranja);
 }
-.estadisticas h3 {
+.bnf-estadistica h3 {
   font-family: "Urbanist";
   font-size: 1.5em;
   letter-spacing: 0.5px;
   color: var(--colorBlanco);
 }
 
-.egresados {
+.bnf-egresados {
   background-image: url(../img/fondo.png);
-  margin-bottom: 36px;
+  padding: 36px 0;
 }
-.egresados-grid {
+.bnf-egresados-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 2em;
 }
-.egresado {
+.bnf-egresado {
   border-radius: 1em;
   background-color: var(--colorBlanco);
   box-shadow: 0 0 2px var(--colorSombras);
 }
-.egresado img {
+.bnf-egresado img {
   border-radius: 1em 1em 0 0;
   border-left: 10px solid var(--colorNaranja);
 }
-.egresado-contenido {
+.bnf-egresado-contenido {
   padding: 1em;
 }
-.egresado-contenido .texto {
+.bnf-egresado-contenido .texto {
   font-family: "Urbanist";
   font-weight: 500;
   text-align: justify;
 }
-.egresado-contenido .autor {
+.bnf-egresado-contenido .autor {
   font-family: "Urbanist";
   font-weight: 700;
   text-align: left;
   margin-bottom: 0;
 }
-.egresado-contenido .carrera {
+.bnf-egresado-contenido .carrera {
   font-family: "Urbanist";
   font-weight: 500;
   text-align: left;
   margin-bottom: 0;
 }
 
-.videos {
+.bnf-videos {
   background-color: var(--colorGris);
-  margin-bottom: 36px;
+  padding: 36px 0;
 }
-.video iframe {
+.bnf-video iframe {
   width: 100%;
   height: 350px;
 }
 /* FIN DE PÁGINA DE BENEFICIOS */
 
 /* INICIO DE PÁGINA DE ADMISIÓN */
-.admision-intro h1 {
-  background-image: url(../img/banner-ad-1.jpg);
+.adm-banner-1 h1 {
+  background-image: url(../img/adm-banner-1.jpg);
   background-size: cover;
   padding: 1em;
   font-family: "Momo Trust Display";
@@ -420,87 +425,85 @@ header {
   text-align: center;
   color: var(--colorBlanco);
   text-transform: uppercase;
-  margin-top: 72px;
-  margin-bottom: 36px;
+  margin-top: 56px;
 }
-.admision-intro p {
+.adm-intro p {
   font-family: "Urbanist";
   font-weight: 500;
   text-align: justify;
-  margin-bottom: 36px;
+  padding: 36px 0;
+  margin-bottom: 0;
 }
-
-.inscripcion {
+.adm-inscripcion {
   background-image: url(../img/fondo.png);
-  margin-bottom: 36px;
+  padding: 36px 0;
 }
-.inscripcion h2,
-.preguntas h2 {
+.adm-inscripcion h2,
+.adm-preguntas h2 {
   font-family: "Momo Trust Display";
   font-size: 2em;
   color: var(--colorTitulos);
   margin-bottom: 36px;
 }
-.inscripcion-paso p {
+.adm-inscripcion-paso p {
   font-family: "Urbanist";
   font-weight: 500;
   text-align: justify;
 }
-.inscripcion-paso a,
-.pregunta a {
+.adm-inscripcion-paso a,
+.adm-pregunta a {
   font-weight: 700;
   text-decoration: none;
   color: var(--colorNaranja);
 }
-.inscripcion-img {
+.adm-inscripcion-img {
   text-align: center;
   filter: drop-shadow(0 0 2px var(--colorSombras));
 }
 
-.admision-banner {
-  margin-bottom: 36px;
+.adm-preguntas {
+  background-color: var(--colorGris);
+  padding: 36px 0;
 }
-
-.preguntas {
-  margin-bottom: 36px;
-}
-.pregunta {
+.adm-pregunta {
   padding: 1.5em;
   border-radius: 1em;
-  background-color: var(--colorGris);
   box-shadow: 0 0 2px var(--colorSombras);
   border-left: 10px solid var(--colorNaranja);
   margin-bottom: 36px;
 }
-.pregunta p {
+.adm-pregunta p {
   font-family: "Urbanist";
   font-weight: 500;
   margin-bottom: 0;
   color: var(--colorTextos);
 }
 
-.publicidad {
+.adm-banner-3 {
+  background-image: url(../img/patron.png);
+  background-size: cover;
+  padding: 36px 0;
+}
+.adm-banner-3-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   background-image: url(../img/patron.png);
   background-size: cover;
-  padding: 2.5em;
   position: relative;
-  margin-bottom: 36px;
 }
-.publicidad-img img {
+.adm-banner-3-img img {
   position: absolute;
-  bottom: -60px;
+  bottom: -90px;
   filter: drop-shadow(0 0 2px var(--colorSombras));
 }
-.publicidad-contenido p {
+.adm-banner-3-contenido p {
   color: #fff;
   font-family: "Urbanist";
   font-weight: 800;
   font-size: 3em;
   margin-bottom: -10px;
 }
-.publicidad-contenido a {
+.adm-banner-3-contenido a {
   display: inline-block;
   background-color: var(--colorNaranja);
   padding: 0.5em 1em;
@@ -511,18 +514,19 @@ header {
   margin-top: 2em;
 }
 @media screen and (max-width: 1024px) {
-  .publicidad {
+  .adm-banner-3-grid {
     grid-template-columns: 1fr;
   }
-  .publicidad-img img {
+  .adm-banner-3-img img {
     display: none;
   }
 }
 /* FIN DE PÁGINA DE ADMISIÓN */
 
 /* INICIO DE FORMULARIO DE CONTACTO */
-.contacto-intro h1 {
-  background-image: url(../img/banner-carreras.jpg);
+.contacto-banner h1 {
+  width: 100%;
+  background-image: url(../img/contacto-banner.jpg);
   background-size: cover;
   padding: 1em;
   font-family: "Momo Trust Display";
@@ -530,20 +534,19 @@ header {
   text-align: center;
   color: var(--colorBlanco);
   text-transform: uppercase;
-  margin-top: 72px;
-  margin-bottom: 36px;
+  margin-top: 56px;
 }
 .contacto-intro p {
   font-family: "Urbanist";
   font-weight: 500;
   text-align: justify;
-  margin-bottom: 36px;
+  padding: 36px 0;
+  margin-bottom: 0;
 }
 
 .contacto-form-contenedor {
-  background-image: url(../img/fondo.png);
-  margin-bottom: 36px;
-  padding: 2em;
+  background-image: url(../img/contacto-fondo.jpg);
+  padding: 36px 0;
 }
 .contacto-form {
   box-shadow: 0 0px 4px var(--colorSombras);
@@ -557,12 +560,12 @@ header {
 .contacto-lista select,
 .contacto-caja input,
 .contacto-caja textarea {
+  width: 100%;
   border: 1px solid var(--colorBordes);
   border-radius: 0.5em;
   padding: 0.6em 0.8em;
   margin: 0.5em 0;
   outline: none;
-  width: 100%;
   font-family: "Urbanist";
   color: var(--colorTextos);
   font-weight: 500;
@@ -593,7 +596,7 @@ header {
 }
 
 .contacto-mapa {
-  margin-bottom: 36px;
+  margin: 36px 0;
 }
 .contacto-mapa iframe {
   width: 100%;
