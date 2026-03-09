@@ -486,14 +486,12 @@ header {
 }
 .adm-banner-3-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-  background-image: url(../img/patron.png);
-  background-size: cover;
+  grid-template-columns: repeat(2, 1fr);
   position: relative;
 }
 .adm-banner-3-img img {
   position: absolute;
-  bottom: -90px;
+  bottom: -80px;
   filter: drop-shadow(0 0 2px var(--colorSombras));
 }
 .adm-banner-3-contenido p {
@@ -514,11 +512,14 @@ header {
   margin-top: 2em;
 }
 @media screen and (max-width: 1024px) {
+  .adm-banner-3-img {
+    display: none;
+  }
   .adm-banner-3-grid {
     grid-template-columns: 1fr;
   }
-  .adm-banner-3-img img {
-    display: none;
+  .adm-banner-3-contenido {
+    text-align: center;
   }
 }
 /* FIN DE PÁGINA DE ADMISIÓN */
