@@ -288,6 +288,91 @@ header {
   margin-bottom: 36px;
 }
 
+.facultades_y_carreras {
+  background-image: url(../img/fondo.png);
+  margin-top: 36px;
+}
+
+.facultades_y_carreras h2{
+  font-family: "Momo Trust Display";
+  font-size: 2em;
+  color : var(--colorTitulos);
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.facultades_y_carreras-grid{
+  display: grid;
+  gap: 1.5em;
+  grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+  padding: 1em;
+}
+
+.facultades{
+  background-color: #fff;
+  border-radius: 3.5em;
+  box-shadow: 0 0 4px var(--colorSombras);
+}
+
+.facultades img{
+  border-radius: .5em .5em 0 0;
+}
+
+.facultad-content{
+  gap: 1.5em;
+  padding: .7em 2em 0em;
+}
+
+.facultad-content a{
+  text-decoration: none;
+}
+
+.facultad-content h1, .facultad-content h2{
+  font-family: "Urbanist";
+  font-weight: 700;
+}
+
+.facultad-content h1{
+  font-size: 1.1em;
+  color: var(--colorTitulos);
+  text-align: center;
+}
+
+.facultad-content h2{
+  font-size: 1em;
+  color: var(--colorTextos);
+  display: flex;
+  justify-content: left;
+  margin-top: 1em;
+}
+
+.facultad-content ul{
+  font-size: .9em;
+  color: var(--colorTextos);
+  font-weight: 500;
+  margin-top: -2em;
+}
+
+.facultad-btn{
+  font-family: "Nunito";
+  font-size: .8em;
+  background-color: var(--colorunfv);
+  color: var(--colorBlanco);
+  padding: .5em;
+  margin: 1.2em;
+  border-radius: .5em;
+  text-align: center;
+  font-weight: 700;
+  display: block;
+}
+
+.facultad-btn:hover{
+  background-color: #fcdf3a;
+  color: var(--colorNegro);
+}
+
+
+
 /* FIN FACULTADES Y CARRERAS */
 
 /* INICIO DE PÁGINA DE BENEFICIOS */
