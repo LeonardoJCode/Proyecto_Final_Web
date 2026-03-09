@@ -87,7 +87,7 @@ header {
   }
 
   .icono-menu {
-    color: var(--colorPrimario);
+    color: var(--colorBlanco);
     font-size: 2em;
   }
 
@@ -491,13 +491,12 @@ header {
 }
 .adm-banner-3-img img {
   position: absolute;
-  bottom: -80px;
+  top: -108px;
   filter: drop-shadow(0 0 2px var(--colorSombras));
 }
 .adm-banner-3-contenido p {
   color: #fff;
-  font-family: "Urbanist";
-  font-weight: 800;
+  font-family: "Momo Trust Display";
   font-size: 3em;
   margin-bottom: -10px;
 }
