@@ -271,6 +271,92 @@ header {
   margin-top: 20px;
 }
 
+.footer{
+  background-image: url(../img/patron.png);
+  color: var(--colorBlanco);
+  padding: 2em 1em;
+}
+
+.footer-row{
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.footer-links{
+  min-width: 220px;
+}
+
+.footer-links h4{
+  font-family: "Momo Trust Display";
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--colorBlanco);
+  padding-bottom: 8px;
+  display: inline-block;
+}
+
+.footer-links ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li a{
+  font-size: .95em;
+  text-decoration: none;
+  color: var(--colorBlanco);
+  display: block;
+  margin-bottom: 12px;
+  transition: .3s;
+}
+
+.footer-links ul li a:hover{
+  color: #dfc638;
+  transform: translateX(5px);
+}
+
+.social-links a{
+  font-size: .95em;
+  text-decoration: none;
+  color: var(--colorBlanco);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  transition: .3s;
+}
+
+.social-links a:hover{
+  color: #dfc638;
+  transform: translateX(5px);
+}
+
+.social-links i{
+  font-size: 18px;
+}
+
+.footer-copy{
+  text-align:center;
+  margin-top:30px;
+  font-size:.85em;
+  opacity:.8;
+}
+
+@media screen and (max-width:1023px){
+  .footer-row{
+    text-align: center;
+    gap: 30px;
+  }
+
+  .social-links a{
+    justify-content: center;
+  }
+}
+
 /* FIN SOBRE NOSOTROS */
 
 /* INICIO FACULTADES Y CARRERAS */
