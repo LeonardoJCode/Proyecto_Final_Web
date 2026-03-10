@@ -150,7 +150,7 @@ header {
 
 .sobre_nosotros hr,
 .objetivos hr {
-  width: 50em;
+  width: 80%;
   height: 2px;
   background-color: var(--colorunfv);
   margin: 25px auto;
