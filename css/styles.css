@@ -107,6 +107,7 @@ header {
     margin-top: 0.5em;
   }
 }
+
 /* FIN DE RWD, RESPONSIVE WEB DESIGN */
 /* FIN DE MENU */
 
@@ -194,9 +195,12 @@ header {
 .mision_vision img {
   width: 250px;
   height: 250px;
-  object-fit: cover; /* evita que se deforme */
-  display: block; /* necesario para centrar */
-  margin: 0.5em auto; /* centra horizontalmente */
+  object-fit: cover;
+  /* evita que se deforme */
+  display: block;
+  /* necesario para centrar */
+  margin: 0.5em auto;
+  /* centra horizontalmente */
   border-radius: 50%;
   border: 5px dashed var(--colorNaranja);
   padding: 5px;
@@ -260,17 +264,18 @@ header {
 .banner-inicio {
   margin-top: 20px;
 }
+
 .banner-inicio img {
   width: 100%;
 }
 
-.footer{
+.footer {
   background-image: url(../img/patron.png);
   color: var(--colorBlanco);
   padding: 2em 1em;
 }
 
-.footer-row{
+.footer-row {
   display: flex;
   justify-content: center;
   gap: 60px;
@@ -279,11 +284,11 @@ header {
   margin: auto;
 }
 
-.footer-links{
+.footer-links {
   min-width: 220px;
 }
 
-.footer-links h4{
+.footer-links h4 {
   font-family: "Momo Trust Display";
   font-size: 1.2em;
   margin-bottom: 20px;
@@ -292,13 +297,13 @@ header {
   display: inline-block;
 }
 
-.footer-links ul{
+.footer-links ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.footer-links ul li a{
+.footer-links ul li a {
   font-size: .95em;
   text-decoration: none;
   color: var(--colorBlanco);
@@ -307,12 +312,12 @@ header {
   transition: .3s;
 }
 
-.footer-links ul li a:hover{
+.footer-links ul li a:hover {
   color: #dfc638;
   transform: translateX(5px);
 }
 
-.social-links a{
+.social-links a {
   font-size: .95em;
   text-decoration: none;
   color: var(--colorBlanco);
@@ -323,37 +328,37 @@ header {
   transition: .3s;
 }
 
-.social-links a:hover{
+.social-links a:hover {
   color: #dfc638;
   transform: translateX(5px);
 }
 
-.social-links i{
+.social-links i {
   font-size: 18px;
 }
 
-.footer-copy{
-  text-align:center;
-  margin-top:30px;
-  font-size:.85em;
-  opacity:.8;
+.footer-copy {
+  text-align: center;
+  margin-top: 30px;
+  font-size: .85em;
+  opacity: .8;
 }
 
-@media screen and (max-width:1023px){
-  .footer-row{
+@media screen and (max-width:1023px) {
+  .footer-row {
     text-align: center;
     gap: 30px;
   }
 
-  .social-links a{
+  .social-links a {
     justify-content: center;
   }
 }
 
-/* FIN SOBRE NOSOTROS */
+/* FIN DE SOBRE NOSOTROS */
 
-/* INICIO FACULTADES Y CARRERAS */
-.facultades_y_carreras-intro h1 {
+/* INICIO DE FACULTADES Y CARRERAS */
+.facultades_y_carreras-banner h1 {
   padding: 1em;
   background-image: url(../img/cp-banner.jpg);
   background-size: cover;
@@ -362,21 +367,32 @@ header {
   text-align: center;
   color: var(--colorBlanco);
   text-transform: uppercase;
-  margin-top: 72px;
-  margin-bottom: 36px;
+  margin-top: 56px;
 }
 
-.facultades_y_carreras {
-  background-image: url(../img/fondo.png);
-  margin-top: 36px;
+.facultades_y_carreras-intro {
+  padding: 36px 0;
+}
+
+.facultades_y_carreras-intro p {
+  font-family: "Urbanist";
+  font-weight: 500;
+  text-align: justify;
+  margin-bottom: 0;
 }
 
 .facultades_y_carreras h2 {
   font-family: "Momo Trust Display";
   font-size: 2em;
   color: var(--colorTitulos);
-  margin-bottom: 36px;
+  margin-top: 18px;
+  margin-bottom: 18px;
   text-align: center;
+}
+
+.facultades_y_carreras {
+  background-image: url(../img/fondo.png);
+  padding: 36px 0;
 }
 
 .facultades_y_carreras-grid {
@@ -432,7 +448,7 @@ header {
   font-size: 0.9em;
   color: var(--colorTextos);
   font-weight: 500;
-  margin-top: -2em;
+  margin-top: -1em;
 }
 
 .facultad-btn {
@@ -477,6 +493,7 @@ header {
 .bnf-intro {
   padding: 36px 0;
 }
+
 .bnf-intro p {
   font-family: "Urbanist";
   font-weight: 500;
@@ -488,6 +505,7 @@ header {
   background-image: url(../img/fondo.png);
   padding: 36px 0;
 }
+
 .bnf-beneficios h2,
 .bnf-egresados h2,
 .bnf-videos h2 {
@@ -496,6 +514,7 @@ header {
   color: var(--colorTitulos);
   margin-bottom: 36px;
 }
+
 .bnf-beneficio img {
   border-radius: 50%;
   border: 5px dashed var(--colorNaranja);
@@ -503,9 +522,11 @@ header {
   transition: all ease-in-out 0.5s;
   margin-top: 36px;
 }
+
 .bnf-beneficio img:hover {
   transform: rotate(15deg);
 }
+
 .bnf-beneficio h3 {
   font-family: "Urbanist";
   font-size: 1.5em;
@@ -521,15 +542,18 @@ header {
   background-size: cover;
   padding: 36px 0;
 }
+
 .bnf-estadistica {
   text-align: center;
 }
+
 .bnf-estadistica .icono {
   font-size: 4em;
   padding: 0.5em;
   text-align: center;
   color: var(--colorNaranja);
 }
+
 .bnf-estadistica h3 {
   font-family: "Urbanist";
   font-size: 1.5em;
@@ -541,34 +565,41 @@ header {
   background-image: url(../img/fondo.png);
   padding: 36px 0;
 }
+
 .bnf-egresados-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 2em;
 }
+
 .bnf-egresado {
   border-radius: 1em;
   background-color: var(--colorBlanco);
   box-shadow: 0 0 2px var(--colorSombras);
 }
+
 .bnf-egresado img {
   border-radius: 1em 1em 0 0;
   border-left: 10px solid var(--colorNaranja);
 }
+
 .bnf-egresado-contenido {
   padding: 1em;
 }
+
 .bnf-egresado-contenido .texto {
   font-family: "Urbanist";
   font-weight: 500;
   text-align: justify;
 }
+
 .bnf-egresado-contenido .autor {
   font-family: "Urbanist";
   font-weight: 700;
   text-align: left;
   margin-bottom: 0;
 }
+
 .bnf-egresado-contenido .carrera {
   font-family: "Urbanist";
   font-weight: 500;
@@ -580,10 +611,12 @@ header {
   background-color: var(--colorGris);
   padding: 36px 0;
 }
+
 .bnf-video iframe {
   width: 100%;
   height: 350px;
 }
+
 /* FIN DE PÁGINA DE BENEFICIOS */
 
 /* INICIO DE PÁGINA DE ADMISIÓN */
@@ -598,6 +631,7 @@ header {
   text-transform: uppercase;
   margin-top: 56px;
 }
+
 .adm-intro p {
   font-family: "Urbanist";
   font-weight: 500;
@@ -605,10 +639,12 @@ header {
   padding: 36px 0;
   margin-bottom: 0;
 }
+
 .adm-inscripcion {
   background-image: url(../img/fondo.png);
   padding: 36px 0;
 }
+
 .adm-inscripcion h2,
 .adm-preguntas h2 {
   font-family: "Momo Trust Display";
@@ -616,17 +652,20 @@ header {
   color: var(--colorTitulos);
   margin-bottom: 36px;
 }
+
 .adm-inscripcion-paso p {
   font-family: "Urbanist";
   font-weight: 500;
   text-align: justify;
 }
+
 .adm-inscripcion-paso a,
 .adm-pregunta a {
   font-weight: 700;
   text-decoration: none;
   color: var(--colorNaranja);
 }
+
 .adm-inscripcion-img {
   text-align: center;
   filter: drop-shadow(0 0 2px var(--colorSombras));
@@ -636,6 +675,7 @@ header {
   background-color: var(--colorGris);
   padding: 36px 0;
 }
+
 .adm-pregunta {
   padding: 1.5em;
   border-radius: 1em;
@@ -643,6 +683,7 @@ header {
   border-left: 10px solid var(--colorNaranja);
   margin-bottom: 36px;
 }
+
 .adm-pregunta p {
   font-family: "Urbanist";
   font-weight: 500;
@@ -656,22 +697,26 @@ header {
   padding: 36px 0;
   margin-bottom: 36px;
 }
+
 .adm-banner-3-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   position: relative;
 }
+
 .adm-banner-3-img img {
   position: absolute;
   top: -108px;
   filter: drop-shadow(0 0 2px var(--colorSombras));
 }
+
 .adm-banner-3-contenido p {
   color: #fff;
   font-family: "Momo Trust Display";
   font-size: 3em;
   margin-bottom: -10px;
 }
+
 .adm-banner-3-contenido a {
   display: inline-block;
   background-color: var(--colorNaranja);
@@ -682,17 +727,21 @@ header {
   text-decoration: none;
   margin-top: 2em;
 }
+
 @media screen and (max-width: 1024px) {
   .adm-banner-3-img {
     display: none;
   }
+
   .adm-banner-3-grid {
     grid-template-columns: 1fr;
   }
+
   .adm-banner-3-contenido {
     text-align: center;
   }
 }
+
 /* FIN DE PÁGINA DE ADMISIÓN */
 
 /* INICIO DE FORMULARIO DE CONTACTO */
@@ -708,6 +757,7 @@ header {
   text-transform: uppercase;
   margin-top: 56px;
 }
+
 .contacto-intro p {
   font-family: "Urbanist";
   font-weight: 500;
@@ -720,6 +770,7 @@ header {
   background-color: var(--colorGris);
   padding: 36px 0;
 }
+
 .contacto-form {
   box-shadow: 0 0px 4px var(--colorSombras);
   border-radius: 0.5em;
@@ -729,6 +780,7 @@ header {
   font-size: 0.9em;
   margin: auto;
 }
+
 .contacto-lista select,
 .contacto-caja input,
 .contacto-caja textarea {
@@ -742,16 +794,19 @@ header {
   color: var(--colorTextos);
   font-weight: 500;
 }
+
 .contacto-lista option,
 .contacto-caja input::placeholder,
 .contacto-caja textarea::placeholder {
   color: var(--colorTextos);
   font-weight: 500;
 }
+
 .contacto-caja textarea {
   min-height: 150px;
   max-height: 200px;
 }
+
 .contacto-btn-envio input {
   width: 100%;
   background-color: var(--colorNaranja);
@@ -763,6 +818,7 @@ header {
   padding: 0.7em 0;
   transition: background-color 1s ease-in-out;
 }
+
 .contacto-btn-envio input:hover {
   background-color: var(--colorAzul);
 }
@@ -779,15 +835,18 @@ header {
   font-family: 'Urbanist';
   font-weight: 500;
 }
+
 .contacto-info h2 {
   font-family: "Momo Trust Display";
   font-size: 2em;
   color: var(--colorTitulos);
   margin-bottom: 36px;
 }
+
 .contacto-info i {
   margin-right: 1em;
 }
+
 /* FIN DE FORMULARIO DE CONTACTO */
 
 /* INICIO DE BOTÓN DE IR ARRIBA */
@@ -802,7 +861,9 @@ header {
   bottom: 20px;
   z-index: 100;
 }
+
 .ir-arriba:hover {
   background-color: var(--colorAzul);
 }
+
 /* FIN DE BOTÓN DE IR ARRIBA */
