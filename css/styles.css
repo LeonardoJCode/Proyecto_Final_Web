@@ -460,6 +460,12 @@ header {
   color: var(--colorNegro);
 }
 
+.ranking-sunedu {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* FIN FACULTADES Y CARRERAS */
 
 /* INICIO DE PÁGINA DE BENEFICIOS */
