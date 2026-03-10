@@ -112,18 +112,12 @@ header {
 
 /* INICIO SOBRE NOSOTROS */
 .banner-animado-unfv {
-  padding: 1em;
-  background-image: url(../img/slider_unfv_anime.png);
-  background-size: cover;
-  background-position: center -90px; /* recorta la parte de arriba */
-  height: 235px;
-  margin-top: 72px;
-  margin-bottom: 16px;
+  margin-top: 56px;
 }
 
 .sobre_nosotros {
   background-image: url(../img/fondo.png);
-  margin-bottom: 36px;
+  padding: 36px 0;
 }
 
 .presentacion h2,
@@ -180,7 +174,7 @@ header {
 
 .mision_vision {
   margin-top: 20px;
-  padding: 0px 150px;
+  padding: 0px 250px;
 }
 
 /* TABLET */
@@ -264,11 +258,10 @@ header {
 }
 
 .banner-inicio {
-  padding: 1em;
-  background-image: url(../img/fondo_pag_1.jpg);
-  background-size: cover;
-  height: 400px;
   margin-top: 20px;
+}
+.banner-inicio img {
+  width: 100%;
 }
 
 .footer{
@@ -661,6 +654,7 @@ header {
   background-image: url(../img/patron.png);
   background-size: cover;
   padding: 36px 0;
+  margin-bottom: 36px;
 }
 .adm-banner-3-grid {
   display: grid;
