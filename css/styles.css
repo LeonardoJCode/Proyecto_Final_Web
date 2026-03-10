@@ -723,7 +723,7 @@ header {
 }
 
 .contacto-form-contenedor {
-  background-image: url(../img/contacto-fondo.jpg);
+  background-color: var(--colorGris);
   padding: 36px 0;
 }
 .contacto-form {
@@ -773,12 +773,26 @@ header {
   background-color: var(--colorAzul);
 }
 
-.contacto-mapa {
-  margin: 36px 0;
-}
 .contacto-mapa iframe {
   width: 100%;
   height: 300px;
+  margin-bottom: 0;
+}
+
+.contacto-info {
+  background-image: url(../img/fondo.png);
+  padding: 36px 0;
+  font-family: 'Urbanist';
+  font-weight: 500;
+}
+.contacto-info h2 {
+  font-family: "Momo Trust Display";
+  font-size: 2em;
+  color: var(--colorTitulos);
+  margin-bottom: 36px;
+}
+.contacto-info i {
+  margin-right: 1em;
 }
 /* FIN DE FORMULARIO DE CONTACTO */
 
