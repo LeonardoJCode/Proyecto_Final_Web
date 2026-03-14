@@ -841,6 +841,7 @@ header {
   margin-right: 1em;
 }
 .contacto-oca-mapa iframe {
+  width: 100%;
   height: 300px;
 }
 /* FIN DE FORMULARIO DE CONTACTO */
