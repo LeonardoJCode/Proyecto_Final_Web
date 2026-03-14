@@ -271,6 +271,7 @@ header {
 
 .footer {
   background-image: url(../img/patron.png);
+  background-size: cover;
   color: var(--colorBlanco);
   padding: 2em 1em;
 }
@@ -671,53 +672,32 @@ header {
   filter: drop-shadow(0 0 2px var(--colorSombras));
 }
 
-.adm-preguntas {
-  background-color: var(--colorGris);
-  padding: 36px 0;
-}
-
-.adm-pregunta {
-  padding: 1.5em;
-  border-radius: 1em;
-  box-shadow: 0 0 2px var(--colorSombras);
-  border-left: 10px solid var(--colorNaranja);
-  margin-bottom: 36px;
-}
-
-.adm-pregunta p {
-  font-family: "Urbanist";
-  font-weight: 500;
-  margin-bottom: 0;
-  color: var(--colorTextos);
-}
-
-.adm-banner-3 {
+.adm-banner-2 {
   background-image: url(../img/patron.png);
   background-size: cover;
   padding: 36px 0;
-  margin-bottom: 36px;
 }
 
-.adm-banner-3-grid {
+.adm-banner-2-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   position: relative;
 }
 
-.adm-banner-3-img img {
+.adm-banner-2-img img {
   position: absolute;
-  top: -108px;
+  top: -98px;
   filter: drop-shadow(0 0 2px var(--colorSombras));
 }
 
-.adm-banner-3-contenido p {
+.adm-banner-2-contenido p {
   color: #fff;
   font-family: "Momo Trust Display";
   font-size: 3em;
   margin-bottom: -10px;
 }
 
-.adm-banner-3-contenido a {
+.adm-banner-2-contenido a {
   display: inline-block;
   background-color: var(--colorNaranja);
   padding: 0.5em 1em;
@@ -729,19 +709,39 @@ header {
 }
 
 @media screen and (max-width: 1024px) {
-  .adm-banner-3-img {
+  .adm-banner-2-img {
     display: none;
   }
 
-  .adm-banner-3-grid {
+  .adm-banner-2-grid {
     grid-template-columns: 1fr;
   }
 
-  .adm-banner-3-contenido {
+  .adm-banner-2-contenido {
     text-align: center;
   }
 }
 
+.adm-preguntas {
+  background-image: url(../img/fondo.png);
+  padding: 36px 0;
+}
+
+.adm-pregunta {
+  padding: 1.5em;
+  border-radius: 1em;
+  box-shadow: 0 0 4px var(--colorSombras);
+  border-left: 10px solid var(--colorNaranja);
+  margin-bottom: 36px;
+  background-color: var(--colorBlanco);
+}
+
+.adm-pregunta p {
+  font-family: "Urbanist";
+  font-weight: 500;
+  margin-bottom: 0;
+  color: var(--colorTextos);
+}
 /* FIN DE PÁGINA DE ADMISIÓN */
 
 /* INICIO DE FORMULARIO DE CONTACTO */
@@ -767,7 +767,7 @@ header {
 }
 
 .contacto-form-contenedor {
-  background-color: var(--colorGris);
+  background-image: url(../img/fondo.png);
   padding: 36px 0;
 }
 
@@ -823,30 +823,27 @@ header {
   background-color: var(--colorAzul);
 }
 
-.contacto-mapa iframe {
-  width: 100%;
-  height: 300px;
-  margin-bottom: 0;
+.contacto-oca {
+  background-color: var(--colorGris);
 }
-
-.contacto-info {
-  background-image: url(../img/fondo.png);
+.contacto-oca-datos {
   padding: 36px 0;
   font-family: 'Urbanist';
   font-weight: 500;
 }
-
-.contacto-info h2 {
+.contacto-oca-datos h2 {
   font-family: "Momo Trust Display";
   font-size: 2em;
   color: var(--colorTitulos);
   margin-bottom: 36px;
 }
-
-.contacto-info i {
+.contacto-oca-datos i {
   margin-right: 1em;
 }
-
+.contacto-oca-mapa iframe {
+  width: 100%;
+  height: 300px;
+}
 /* FIN DE FORMULARIO DE CONTACTO */
 
 /* INICIO DE BOTÓN DE IR ARRIBA */
